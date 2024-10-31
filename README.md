@@ -24,7 +24,7 @@
 1. **Cloner le projet**
 
    ```bash
-   git clone https://github.com/QuentinGP23/test-auto-exo.git
+   git clone https://github.com/votre-compte/mailler.git
    cd mailler
    ```
 
@@ -86,14 +86,26 @@ Pour utiliser Gmail en tant que transporteur SMTP :
 
 ## Structure du Projet
 
-- **src/** : Code source principal
-  - `app.ts` : Configuration de l'application Express
-  - `server.ts` : Lancement du serveur
-  - `routes.ts` : Définition des routes de l'API
-  - `taskController.ts` : Logique de gestion des tâches
-  - `emailService.ts` : Service d'envoi d'emails
-  - `taskDatabase.ts` : Base de données en mémoire
-- **tests/** : Tests des endpoints de l'API avec Jest et Supertest
+Voici l'arborescence du projet :
+
+```
+mailler/
+├── src/
+│   ├── app.ts             # Configuration de l'application Express
+│   ├── server.ts          # Point d'entrée du serveur
+│   ├── routes.ts          # Définition des routes de l'API
+│   ├── taskController.ts  # Logique de gestion des tâches
+│   ├── emailService.ts    # Service d'envoi d'emails
+│   ├── taskDatabase.ts    # Base de données en mémoire
+├── tests/
+│   └── taskApi.test.ts    # Tests des endpoints de l'API
+├── .env                   # Variables d'environnement (non inclus dans le dépôt)
+├── .gitignore             # Fichiers et dossiers ignorés par git
+├── jest.config.js         # Configuration de Jest
+├── package.json           # Dépendances et scripts npm
+├── tsconfig.json          # Configuration TypeScript
+└── README.md              # Documentation du projet
+```
 
 ## Auteur
 
